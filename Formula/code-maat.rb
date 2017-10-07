@@ -5,7 +5,7 @@ class CodeMaat < Formula
   version "1.0-SNAPSHOT"
   sha256 "6091a81c6256b6133a56278505a4d6defdb784d93c47adb5d3521a06cca82b06"
 
-  depends_on "leinigen" => :build
+  depends_on "leiningen" => :build
 
   def install
     system "lein uberjar"
