@@ -11,7 +11,8 @@ class CodeMaat < Formula
     system "lein uberjar"
 
     libexec.install "target/code-maat-#{version}-standalone.jar"
-    bin.write_jar_script libexec/"code-maat-#{version}-standalone.jar", codemaat
+    bin.write_jar_script libexec/"code-maat-#{version}-standalone.jar",
+                         "code-maat"
   end
 
   test do
